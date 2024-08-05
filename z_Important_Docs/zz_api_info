@@ -1,0 +1,7 @@
+Practice Websites for API Automation Scenarios -->
+
+JSONPlaceholder 🌍 URL: https://jsonplaceholder.typicode.com/ 📌 A simple REST API that provides various endpoints for testing GET, POST, PUT, and DELETE requests. Perfect for beginners!
+ReqRes 🌐 URL: https://reqres.in/ 📌 Offers a range of mock APIs to practice CRUD operations. Plus, it provides real-world scenarios for user registration and authentication.
+RESTful-Booker 📚 URL: https://restful-booker.herokuapp.com/ 📌 A booking API that lets you experiment with creating, updating, and deleting bookings. Ideal for understanding complex API interactions.
+The Cat API 🐱 URL: https://thecatapi.com/ 📌 Who doesn't love cats? Test your skills by fetching cat images and exploring various query parameters.
+OpenWeatherMap ☀️🌦️🌨️ URL: https://openweathermap.org/api 📌 Practice retrieving weather data using real-time weather APIs. It's a great opportunity to work with JSON responses.
