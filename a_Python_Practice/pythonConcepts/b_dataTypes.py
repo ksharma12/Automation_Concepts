@@ -69,5 +69,5 @@ print(isinstance(asdf, int))
 # Type casting
 print(float(asdf))
 print(bool(asdf))  # True
-print(bool(asdf1)) # False
-print(bool(asdf2)) # True
+print(bool(asdf1))  # False
+print(bool(asdf2))  # True

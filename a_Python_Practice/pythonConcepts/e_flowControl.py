@@ -178,9 +178,3 @@ str, x = fun()  # Assign returned tuple
 print(str)
 print(x)
 
-
-def example(data, console, proxy, timeout, sequence):
-    print(data, console, proxy, timeout, sequence)
-
-example("dataentry_")
-

@@ -300,6 +300,7 @@ print(c)
 # print(minimum)
 
 # -----------------------------------MEMBERSHIP AND IDENTITY OPERATORS---------------------------------------------
+print("-----------------MEMBERSHIP AND IDENTITY OPERATORS-------------------------------------------")
 '''
 1. is
 2. is not
