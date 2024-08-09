@@ -94,7 +94,103 @@ class A:
         while i < 10:
             print(i)
             i += 1
-        print("----------------------------------------------------------")
+        print("------------------list comprehention_-------------------------")
+        a_comp = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        a_comp_1 = [n for n in a_comp if n % 2 == 0]
+        print(a_comp_1)  # list of even numbers
+        print(type(a_comp_1))
+        print("------------------set comprehention_-------------------------")
+        a_set_1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+        a_set_2 = {n for n in a_comp if n % 2 == 0}
+        print(a_set_2)  # set of even numbers
+        print(type(a_set_2))
+        print("------------------dictionary comprehention_-------------------------")
+        a_dict_1 = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9}
+        a_dict_2 = {n: n for n in a_dict_1.values() if n % 2 == 0}
+        print(a_dict_2)
+
+    def list(self):
+        x = []
+        a_l = [1, 2, 3, 'asdf', "Keshav", "Keshav", True, 34.65, 3 + 4j]
+        print(type(a_l))
+        print(a_l[4])
+        a_l.append("corry anderson")
+        print(a_l)
+        a_list_1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        print(a_list_1[5:])
+        del a_list_1[9]
+        print(a_list_1)
+        print(a_list_1[:5])
+        print(a_list_1[:])
+        print(a_list_1[::])
+        print(a_list_1[::-1])
+        print(a_list_1[5:0:-1])
+        print(a_list_1[5:0:-2])
+        print(a_list_1[0::2])
+        # repetition of same items
+        alist_2 = [1, 2, 3, True, "Keshav", 3 + 5j]
+        alist_4 = [9, 8, 7, False, "Sharma", 7 - 3j]
+        alist_3 = alist_2 * 2
+        alist_5 = alist_4 + alist_2
+        print(alist_3)
+        print(alist_5)
+        print("Keshav" in alist_2)
+        print("Keshav" not in alist_2)
+
+    def tuple(self):
+        a_tuple = (1, 2, 3, 4, 5, "Keshav", 34.23, True)
+        print(a_tuple[3])
+        print(a_tuple[:3])
+
+        original_tuple = (1, 2, 3, 4)
+        new_tuple_1 = tuple(original_tuple)
+        print(new_tuple_1)
+
+    def dictionary(self):
+        a_d1 = {
+            1: "24dsdsf",
+            "F.Name": "Keshav",
+            "L.Name": "Sharma",
+            "Age": 31
+        }
+        a_d2 = {
+            "F.Name": "Keshav",
+            "L.Name": "Sharma",
+            "Age": 31,
+            "IsMarried": False,
+            "Salary": 1000000000.10
+        }
+        print(a_d1[1])
+        print(f"First Name : {a_d2['F.Name']}")
+        print("__------------------------------------------------------------")
+        for x in a_d2:
+            print(x)
+        print("__------------------------------------------------------------")
+        for x in a_d2:
+            print(a_d2[x])
+        print("__------------------------------------------------------------")
+        for a in a_d2.values():
+            print(a)
+        print("__------------------------------------------------------------")
+        for a in a_d2.items():
+            print(a)
+        print("__------------------------------------------------------------")
+        for a in a_d2.keys():
+            print(a)
+        print("__------------------------------------------------------------")
+        items = {
+            "fruits": ["Apples", "Banana", "Grapes", "Mango"],
+            "Price": {"a": 1213, "b": 2345},
+            "Size": 12.8
+        }
+        print(items["fruits"][2])
+        print(items.get("Price").get("b"))
+        print(items["Price"]["b"])
+        print(len(items))
+        print("--------------------------------------------------------------------------------------")
+        lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 6, 6, 6, 4, 3, 3, 3, 4]
+        print(len(lst))
+        print({n: lst.count(n) for n in lst})
 
 
 class B(A):
@@ -104,4 +200,4 @@ class B(A):
 
 
 a = A()
-a.loops()
+a.dictionary()

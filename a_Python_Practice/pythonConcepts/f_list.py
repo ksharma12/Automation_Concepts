@@ -39,6 +39,16 @@ print(c[:])
 print(c[2:4])
 print(c[:4])
 
+a_list_1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(a_list_1[5:])
+print(a_list_1[:5])
+print(a_list_1[:])
+print(a_list_1[::])
+print(a_list_1[::-1])
+print(a_list_1[5:0:-1])
+print(a_list_1[5:0:-2])
+print(a_list_1[0::2])
+
 # Updating list values
 d = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 d[3] = 11
