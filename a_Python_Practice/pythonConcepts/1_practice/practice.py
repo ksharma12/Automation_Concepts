@@ -1,10 +1,16 @@
-x = lambda a, b: a + b
-print(x(23, 34))
+x = lambda a, b, c: a + b + c
+print(x(1, 2, 3))
 
 
-def my_func(a, b):
-    return lambda c, a, b: a * b * c
+def myfunc_args(*args):
+    for n in args:
+        print(n)
 
 
-mydoubler = my_func(23, 34)
-print(mydoubler(12, 23, 34))
+def myfunc_kwargs(**kwargs):
+    for i, v in kwargs.items():
+        print(i, v)
+
+
+myfunc_args("keshav", "sharma", "arti", "pooja", "sk sharma")
+myfunc_kwargs(a=1, b=2, c=3, d=4, e=5)
