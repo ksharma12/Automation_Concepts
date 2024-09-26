@@ -9,3 +9,4 @@ endpoint = "/public/v2/users"  # endpoint / path parameters
 url = base_url + endpoint
 headers = {"Authentication": auth_token}
 response = requests.get(url=url, headers=headers)
+print(response.json)

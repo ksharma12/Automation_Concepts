@@ -9,4 +9,5 @@ dictionary = {
 }
 
 with open("../sample.json", "w") as outfile:
-    json.dump(dictionary, outfile)
+    json_data = json.dump(dictionary, outfile)
+    print(json_data)

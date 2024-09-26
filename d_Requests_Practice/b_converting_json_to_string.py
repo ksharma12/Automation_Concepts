@@ -12,9 +12,7 @@ headers = {"Authentication": auth_token}
 response = requests.get(url=url, headers=headers)
 print(json.dumps(response.json()))
 print(type(json.dumps(response.json())))
-print(json.dumps(response.json(),indent=4))
-
+print(json.dumps(response.json(), indent=4))
 
 # Python program to write JSON
 # to a file
-
