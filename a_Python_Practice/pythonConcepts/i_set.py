@@ -5,6 +5,16 @@ Sets :
 2. It can store different types of values Int,String,Float,Bool etc.
 3. Set cannot have duplicate values
 4. Set are defined using {} , collection which is un_indexed and unordered
+
+discard():
+If the element is present, it removes it from the set.
+If the element is not present, it does nothing (no error is raised).
+remove():
+If the element is present, it removes it from the set.
+If the element is not present, it raises a KeyError exception.
+
+update :- to add elements of 1 set to another
+
 """
 
 s1 = {"Selenium", "Appium", "RPA", "Cyprus", 12, 32, True, 34.23, 345, 65.653}

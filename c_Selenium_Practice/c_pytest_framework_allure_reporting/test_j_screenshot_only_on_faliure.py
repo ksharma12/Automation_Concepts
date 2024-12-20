@@ -11,8 +11,8 @@ def log_on_failure(request):
     yield
     item = request.node
     if item.rep_call.failed:
-        allure.pytest_plugin.Attach(driver.get_screenshot_as_png(), name="login", attachment_type=AttachmentType.PNG)
-        # allure.attach(driver.get_screenshot_as_png(), name="login", attachment_type=AttachmentType.PNG)
+        #allure.pytest_plugin.Attach(driver.get_screenshot_as_png(), name="login", attachment_type=AttachmentType.PNG)
+        allure.attach(driver.get_screenshot_as_png(), name="login", attachment_type=AttachmentType.PNG)
 
 
 # run before each testcase in this file

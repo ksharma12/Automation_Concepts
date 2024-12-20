@@ -79,6 +79,12 @@ string = "My Name is Keshav Sharma"
 s = string.split(" ")
 for x in s:
     print(x)
+
+my_list = ["apple", "banana", "cherry"]
+
+# Using enumerate()
+for index, value in enumerate(my_list):
+    print(index, value)
 # ----------------------------------------While loop------------------------------------------------------
 i = 0
 while i < 10:

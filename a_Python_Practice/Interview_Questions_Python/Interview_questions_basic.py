@@ -50,6 +50,7 @@ duplicate_item = 'a'
 print("Q3.1 : ", [n for n in ques_3 if n != duplicate_item])
 ques_3_1 = [n for n in ques_3 if ques_3.count(n) != 1]
 print("Q3.2 : ", [x for x in ques_3 if x not in ques_3_1])
+print("Q3.3 : ", [n for n in ques_3 if ques_3.count(n) == 1])
 
 # Q4 Remove all elements which are duplicate in the list except 1
 list4 = ['a', 'b', 'c', 'd', 'a', 'a']
@@ -108,7 +109,7 @@ print("Q13 : ", ["a" + n * "b" for n in range(1, n + 1)])
 ques_14 = [13, 14, 15, 16, 17, 18, 19, 20]
 print("Q14 : ", [index + value for index, value in enumerate(ques_14)])
 
-# Q15 Multiply each pair of 2 list (index + value) and make a single list
+# Q15 Multiply each pair of 2 list (index and value) and make a single list
 ques_15_1 = [13, 14, 15, 16, 17, 18, 19, 20]
 ques_15_2 = [21, 22, 23, 24, 25, 26, 27, 28]
 print("Q15 : ", [index * value for index, value in enumerate(zip(ques_15_1, ques_15_2))])
