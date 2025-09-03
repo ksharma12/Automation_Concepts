@@ -1,19 +1,6 @@
-import time
+import numpy as np
 
-from selenium import webdriver
-from selenium.webdriver import ActionChains
-from selenium.webdriver.common.by import By
+arr1 = np.array([1, 2, 3])
+arr2 = np.array([4, 5, 6])
 
-driver = webdriver.Chrome()
-driver.get("https://www.amazon.com/")
-driver.implicitly_wait(10)
-action = ActionChains(driver)
-action.move_to_element(driver.find_element(By.XPATH, "//span[normalize-space()='Account & Lists']")).perform()
-driver.find_element(By.XPATH, "//div[@id='nav-flyout-ya-newCust']//a[@class='nav-a'][normalize-space()='Start here.']").click()
-time.sleep(5)
-
-
-payload = open(r"jsonfile").read()
-
-
-
+print(np.reshape(arr1, newshape=[1, 3]))

@@ -1,4 +1,4 @@
-from a_Python_Practice.pythonConcepts.o_accessSpecifiers import Car
+from a_Python_Practice.pythonConcepts.BasicConcepts.o_accessSpecifiers import Car
 
 car = Car()
 print(car.public_var)

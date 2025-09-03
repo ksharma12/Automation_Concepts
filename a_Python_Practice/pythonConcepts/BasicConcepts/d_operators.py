@@ -14,13 +14,13 @@
 
 # ------------------------------------ARITHMATIC OPERATORS------------------------------------------------
 '''
-1. Addition
-2. Subtraction
-3. Multiplication
-4. Division
+1. Addition (+)
+2. Subtraction (-)
+3. Multiplication (*)
+4. Division (float division) (/)
 5. Modulus (%)
 6. Exponential (**)
-7. Floor Division (//)
+7. Floor Division (integer division) (//) 
 '''
 a = 10
 b = 3
@@ -164,6 +164,9 @@ if atleast 1 operator is 1 then result is 1 otherwise 0
   | 1 | | | 1 |--> 1 |
   |------------------|
 '''
+print('getting binary value of 16 and 18')
+print(bin(16))
+print(bin(18))
 print(16 | 18)
 '''
 why 18 because :
@@ -191,6 +194,9 @@ if both bits are different then result is 1 otherwise 0
   | 1 | ^ | 1 |--> 0 |
   |------------------|
 '''
+print('getting binary value of 16 and 18')
+print(bin(16))
+print(bin(18))
 print(16 ^ 18)
 print(bin(2))
 '''
